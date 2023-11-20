@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vote insription complet</title>
     <link rel="stylesheet" href="./assets/style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/style/style.css">
+    <script type="module" src="/assets/js/script.js" defer></script>
 </head>
+
 <body>
-    <main class="ma-class">
-       <img src="./assets/img/layout_set_logo.jpg" alt="logoafpa">
-       <form action="./userDetails.html">
-        <fieldset>
-            <legend>Inscrire vote compte :</legend>
-            <label for="nom">Nom : 
-                <input type="text" placeholder="votre nom">
-            </label>
-            <label for="nom">Prénom : 
-                <input type="text" placeholder="votre prénom" >
-            </label>
-            <label for="nom">Adress : 
-                <input type="text" placeholder="votre adress ">
-            </label>
-            <label for="nom">Mote de passe : 
-                <input type="password" placeholder="**************">
-            </label>
-            <label for="nom">Confirmation mote de passe :
-                <input type="text" placeholder="*************">
-            </label>
-            <input type="submit" value="validation">
-        </fieldset>
-       </form>
+    <main class="position-absolute top-50 start-50 translate-middle shadow-lg p-4 mb-5 bg-body-tertiary border border-dark rounded-4 m-auto w-50 shadow">
+        <img src="./assets/img/layout_set_logo.jpg" class="d-flex m-auto" alt="logoafpa">
+        <h1 id="mon_id" class="fs-3 rounded-pill w-75 p-3 text-center m-auto mb-3 text-white shadow-" style="background-color:rgb(134,189,36);">Bienvenu sur l'application AFPA !</h1>
+        <form action="#">
+            <fieldset class="border p-3 border-secondary d-flex flex-column m-5 mx-auto shadow p-3 mb-5 bg-body-tertiary rounded">
+                <legend class="float-none w-auto">Inscrire vote compte :</legend>
+                <label class="form-label">Nom :<input type="text" class="form-control" name="nom" required></label>
+                <label class="form-label">Prénom :<input type="text"  class="form-control" id="nom" name="prenom" required></label>
+                <label class="form-label">Email :<input type="text"class="form-control" name="adress" required></label>
+                <label class="form-label">Mote de passe :<input type="password"class="form-control" id="moteDePasse" placeholder="**************" name="moteDePasse" required></label>
+                <label class="form-label">Confirmation mote de passe :<input type="password"class="form-control" id="confirmMoteDepasse" placeholder="*************"
+                        name="confrmMoteDePasse" required></label>
+                <input type="submit" value="validation" class=" btn btn-outline-success m-auto">
+                <div id ="message"></div>
+            </fieldset>
+        </form>
     </main>
 </body>
+
 </html>

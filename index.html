@@ -4,28 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/style/style.css">
     <title>Application AFPA</title>
   </head>
-  <body class="ma-class">
-    <main class="ma-class">
-      <img src="./assets/img/layout_set_logo.jpg" alt="logo AFPA" />
-      <h1 id="mon_id">Bienvenu sur l'application AFPA !</h1>
+  <body class="position-absolute top-50 start-50 translate-middle shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+    <main class="shadow-lg p-4">
+      <img src="./assets/img/layout_set_logo.jpg" alt="logo AFPA" class="rounded mx-auto d-block m-xl-2 m-4 " />
+      <h1 id="mon_id" class="fs-3 rounded-pill w-75 p-3 text-center m-auto mb-3 text-white shadow-" style="background-color:rgb(134,189,36);">Bienvenu sur l'application AFPA !</h1>
       <form action="./userDetails.html">
-        <fieldset>
-          <legend>Accès à votre espace privé</legend>
+        <fieldset class="border p-3 border-secondary m-auto bg-body-tertiary rounded shadow p-3 mb-5 bg-body-tertiary rounded">
+          <legend class="float-none w-auto ">Accès à votre espace privé</legend>
           <h2>Vous avez déjà un compte ?</h2>
           <!-- <h3>Connectez-vous</h3> -->
-          <label for="email"
-            >Identifiant :
-            <input type="text" id="email" placeholder="mail@example.fr" />
+          <label class="form-label">Identifiant :<input type="text" id="email" placeholder="mail@example.fr" class="form-control" required/>
           </label>
-          <label for="email"
-            >Mote de passe :
-            <input type="password" id="motedepasse" />
+          <label class="form-label">Mote de passe :<input type="password" id="motedepasse" class =" form-control"required/>
           </label>
-          <input type="submit" value="Connecter" />
+          <input type="submit" value="Connecter" class="my-3 btn btn-outline-success" aria-pressed="true"/>
               <h2 class="pas-compte">Pas entrer de compte ?</h2>
-      <a href="./Inscription.html">Inscription</a>
+      <a href="./Inscription.html" class="link-opacity-10-hover" >Inscription</a>
+      <input type="checkbox" name="toggle" id="toggle">
         </fieldset>
       </form>
 
